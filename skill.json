@@ -1,0 +1,18 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:055374351184:function:9ef2c573-8c05-4a0c-ad1a-c2765b6bf995:Release_0"
+        }
+      }
+    },
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "alexa/to-do-list"
+        }
+      }
+    }
+  }
+}
