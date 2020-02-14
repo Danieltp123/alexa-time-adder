@@ -16,9 +16,9 @@ const ErrorHandler = require('./handlers/Error');
 // defined are included below. The order matters - they're processed top to bottom.
 exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
+        TimeAdderIntent,
         LaunchRequest,
         SessionEndedRequest,
-        TimeAdderIntent,
         HelpIntent,
         CancelAndStopIntent,
         IntentReflector
