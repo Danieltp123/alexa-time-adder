@@ -1,5 +1,5 @@
 const Alexa = require('ask-sdk-core');
-const languageStrings = ('./localisation');
+const languageStrings = require('../../localisation');
 const i18n = require('i18next');
 
 const Localisation = {
