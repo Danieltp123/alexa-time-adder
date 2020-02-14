@@ -10,10 +10,10 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "name": "To-Do List"
+          "name": "Somador de tempo"
         },
         "pt-BR": {
-          "name": "To-Do List"
+          "name": "Time adder"
         }
       }
     }

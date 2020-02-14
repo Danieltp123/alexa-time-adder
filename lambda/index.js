@@ -3,7 +3,7 @@
 // session persistence, api calls, and more.
 const Alexa = require('ask-sdk-core');
 const LaunchRequest = require('./handlers/LaunchRequest');
-const HelloWorldIntent = require('./handlers/HelloWorldIntent');
+const TimeAdderIntent = require('./handlers/TimeAdderIntent');
 const HelpIntent = require('./handlers/HelpIntent');
 const CancelAndStopIntent = require('./handlers/CancelAndStopIntent');
 const SessionEndedRequest = require('./handlers/SessionEndedRequest');
@@ -17,10 +17,10 @@ const ErrorHandler = require('./handlers/Error');
 exports.handler = Alexa.SkillBuilders.custom()
     .addRequestHandlers(
         LaunchRequest,
-        HelloWorldIntent,
+        SessionEndedRequest,
+        TimeAdderIntent,
         HelpIntent,
         CancelAndStopIntent,
-        SessionEndedRequest,
         IntentReflector
     )
     .addErrorHandlers(

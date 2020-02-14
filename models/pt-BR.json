@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "lista para fazer",
+      "invocationName": "somar tempo",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -16,10 +16,10 @@
           "samples": []
         },
         {
-          "name": "HelloWorldIntent",
+          "name": "TimeAdderIntent",
           "slots": [],
           "samples": [
-            "diga a lista para fazer"
+            "some os tempos"
           ]
         },
         {
