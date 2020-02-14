@@ -37,32 +37,6 @@
         }
       ],
       "types": []
-    },
-    "dialog": {
-      "intents": [
-        {
-          "name": "TimeAdderIntent",
-          "confirmationRequired": true,
-          "prompts": {},
-          "slots": [
-            {
-              "name": "duration_one",
-              "type": "AMAZON.DURATION",
-              "confirmationRequired": false,
-              "elicitationRequired": false,
-              "prompts": {}
-            },
-            {
-              "name": "duration_two",
-              "type": "AMAZON.DURATION",
-              "confirmationRequired": false,
-              "elicitationRequired": false,
-              "prompts": {}
-            }
-          ]
-        }
-      ],
-      "delegationStrategy": "ALWAYS"
     }
   }
 }
