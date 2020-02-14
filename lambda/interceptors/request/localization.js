@@ -3,7 +3,7 @@ const i18n = require('i18next');
 
 // This request interceptor will bind a translation function 't' to the handlerInput
 // Additionally it will handle picking a random value if instead of a string it receives an array
-const LocalisationRequestInterceptor = {
+const Localisation = {
     process(handlerInput) {
         const localisationClient = i18n.init({
             lng: Alexa.getLocale(handlerInput.requestEnvelope),
@@ -24,4 +24,4 @@ const LocalisationRequestInterceptor = {
     }
 };
 
-module.exports = LocalisationRequestInterceptor;
+module.exports = Localisation;
