@@ -7,7 +7,7 @@ const HelloWorldIntent = require('./handlers/HelloWorldIntent');
 const HelpIntent = require('./handlers/HelpIntent');
 const CancelAndStopIntent = require('./handlers/CancelAndStopIntent');
 const SessionEndedRequest = require('./handlers/SessionEndedRequest');
-const IntentReflecto = require('./handlers/IntentReflecto');
+const IntentReflector = require('./handlers/IntentReflector');
 
 const ErrorHandler = require('./handlers/Error');
 
@@ -21,7 +21,7 @@ exports.handler = Alexa.SkillBuilders.custom()
         HelpIntent,
         CancelAndStopIntent,
         SessionEndedRequest,
-        IntentReflecto
+        IntentReflector
     )
     .addErrorHandlers(
         ErrorHandler,

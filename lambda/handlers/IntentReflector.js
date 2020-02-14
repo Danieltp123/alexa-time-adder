@@ -2,7 +2,7 @@
 // It will simply repeat the intent the user said. You can create custom handlers
 // for your intents by defining them above, then also adding them to the request
 // handler chain below.
-const IntentReflectorHandler = {
+const IntentReflector = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'IntentRequest';
     },
@@ -17,4 +17,4 @@ const IntentReflectorHandler = {
     }
 };
 
-module.exports = IntentReflectorHandler;
+module.exports = IntentReflector;
