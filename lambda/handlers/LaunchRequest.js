@@ -5,10 +5,10 @@ const LaunchRequestHandler = {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
     },
     handle(handlerInput) {
-        const speechText = handlerInput.t('ADD_TIMES_MSG');
+        const speechText = handlerInput.t('WELCOME_MSG');
         return handlerInput.responseBuilder
             .speak(speechText)
-            .reprompt(speakOutput)
+            .reprompt(handlerInput.t('HELP_MSG'))
             .getResponse();
     }
 };
