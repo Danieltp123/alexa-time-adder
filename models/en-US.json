@@ -19,7 +19,7 @@
           "name": "TimeAdderIntent",
           "slots": [],
           "samples": [
-            "add the times"
+            "add up times"
           ]
         },
         {
