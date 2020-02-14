@@ -10,10 +10,10 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "name": "Somador de tempo"
+          "name": "Time adder"
         },
         "pt-BR": {
-          "name": "Time adder"
+          "name": "Somador de tempo"
         }
       }
     }
