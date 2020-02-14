@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "change me",
+      "invocationName": "lista para fazer",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -19,13 +19,7 @@
           "name": "HelloWorldIntent",
           "slots": [],
           "samples": [
-            "hello",
-            "how are you",
-            "say hi world",
-            "say hi",
-            "hi",
-            "say hello world",
-            "say hello"
+            "diga a lista para fazer"
           ]
         },
         {

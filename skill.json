@@ -10,7 +10,10 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "name": "alexa/to-do-list"
+          "name": "To-Do List"
+        },
+        "pt-BR": {
+          "name": "To-Do List"
         }
       }
     }

@@ -2,14 +2,27 @@
 // Please visit https://alexa.design/cookbook for additional examples on implementing slots, dialog management,
 // session persistence, api calls, and more.
 const Alexa = require('ask-sdk-core');
-const handlers = require('./handlers');
+const LaunchRequest = require('./handlers/LaunchRequest');
+const HelloWorldIntent = require('./handlers/HelloWorldIntent');
+const HelpIntent = require('./handlers/HelpIntent');
+const CancelAndStopIntent = require('./handlers/CancelAndStopIntent');
+const SessionEndedRequest = require('./handlers/SessionEndedRequest');
+const IntentReflecto = require('./handlers/IntentReflecto');
+
 const ErrorHandler = require('./handlers/Error');
 
 // The SkillBuilder acts as the entry point for your skill, routing all request and response
 // payloads to the handlers above. Make sure any new handlers or interceptors you've
 // defined are included below. The order matters - they're processed top to bottom.
 exports.handler = Alexa.SkillBuilders.custom()
-    .addRequestHandlers(handlers)
+    .addRequestHandlers(
+        LaunchRequest,
+        HelloWorldIntent,
+        HelpIntent,
+        CancelAndStopIntent,
+        SessionEndedRequest,
+        IntentReflecto
+    )
     .addErrorHandlers(
         ErrorHandler,
     )
