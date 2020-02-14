@@ -1,16 +1,7 @@
 const Alexa = require('ask-sdk-core');
-// const languageStrings = ('./localisation');
+const languageStrings = ('./localisation');
 const i18n = require('i18next');
-const languageStrings = {
-    en: {
-        translation: {
-            "ADD_TIMES_MSG": "Welcome to Time adder. what are the times you want to add?"
-        }
-    }
-}
 
-// This request interceptor will bind a translation function 't' to the handlerInput
-// Additionally it will handle picking a random value if instead of a string it receives an array
 const Localisation = {
     process(handlerInput) {
         const localisationClient = i18n.init({

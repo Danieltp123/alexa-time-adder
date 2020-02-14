@@ -1,5 +1,6 @@
 {
     "translation": {
-        "ADD_TIMES_MSG": "Welcome to Time adder. what are the times you want to add?"
+        "WELCOME_MSG": "Welcome, you can say Hello or Help. Which would you like to try?",
+        "ADD_TIMES_MSG": "What are the times you want to add?"
     }
 }
